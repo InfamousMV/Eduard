@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samsung Galaxy S21</title>
+        <link rel="stylesheet" href="samsung.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Samsung</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Others</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="togglemenu()">
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <h2>Samsung<br>Galaxy S21/S21+</h2>
+                    <p>Modern age requires modern phone</p>
+                    <h4>£999.99</h4>
+                    <button type="button">Buy Now<img src="images/arrow.png"></button>
+                </div>
+                <div class="col-2">
+                    <img src="images/phone.png" class="phone">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="images/add.png">
+                        <p><small>Add to Cart</small></p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px"
+
+            function togglemenu() {
+                if(menuList.style.maxHeight == "0px") 
+                    {
+                    menuList.style.maxHeight = "130px"
+                    }
+             else 
+                {
+                menuList.style.maxHeight = "0px";
+                }
+        }
+        </script>
+    </body>
+</html>
